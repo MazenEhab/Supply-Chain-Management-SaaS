@@ -1,0 +1,4 @@
+import { Bell, Search, ChevronDown, Command } from 'lucide-react';
+export default function Topbar({ title, subtitle }) {
+  return <header className="topbar"><div className="mobile-brand"><div className="brand-mark"><span>↗</span></div>SupplyFlow</div><div className="page-heading"><h1>{title}</h1><p>{subtitle}</p></div><div className="top-actions"><button className="search-trigger"><Search size={16}/><span>Search anything...</span><kbd><Command size={11}/> K</kbd></button><button className="icon-button notification"><Bell size={18}/><i/></button><div className="top-divider"/><button className="user-switch"><div className="avatar">MA</div><ChevronDown size={15}/></button></div></header>;
+}
